@@ -21,6 +21,7 @@ public class StudentController {
 
     // Mappings - URL endpoints
     // Get the list of all student
+
     @GetMapping("/listStudents")
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
