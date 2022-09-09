@@ -1,11 +1,12 @@
 package com.example.studenrmgmtbackend.Controller;
 import com.example.studenrmgmtbackend.StudentRepository.StudentRepository;
-import model.Student;
+import com.example.studenrmgmtbackend.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@RestController
+@CrossOrigin(origins="http://localhost:3000")
 public class StudentController {
 
     @Autowired
